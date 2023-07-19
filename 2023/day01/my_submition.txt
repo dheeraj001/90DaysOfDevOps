@@ -1,0 +1,37 @@
+What is devops?
+
+DevOps can be seen as a philosophy or approach that aims to bridge the gap between different teams(dev or ops)
+or departments within an organization.
+ 
+ The core principles of devops
+
+ Collaboration
+ Continuous Improvement
+ Automation
+ Agile Practices
+
+What is Automation, Scaling, Infrastructure
+
+Automation: Automation involves using software tools and processes to automate repetitive or manual tasks, 
+reducing human intervention and increasing efficiency. It allows for the streamlining of processes, improved
+consistency, and reduction of human error. In the context of IT operations, automation can include tasks
+such as software deployment, configuration management, provisioning of resources, and monitoring.
+
+Scaling: Scaling refers to the ability to handle increased workload or demand by adjusting the resources or
+capacity of a system. In the context of cloud computing, scaling can be done horizontally 
+(adding more instances of a service or application) or vertically (increasing the resources allocated to
+existing instances). Scaling allows systems to handle increased traffic, data processing, or user demand,
+ensuring optimal performance and avoiding bottlenecks or downtime
+
+Infrastructure: Infrastructure refers to the underlying hardware, software, and network components that
+support the operation of an IT system. In the context of cloud computing, infrastructure typically refers
+to the resources provided by cloud service providers, such as virtual machines, storage, networking, and 
+other services. Infrastructure can be managed on-premises (physical servers and network equipment) or
+in the cloud (virtualized resources provided by cloud providers like AWS, Azure, or Google Cloud).
+
+Why DevOps is Important
+
+DevOps enhances collaboration, accelerates software delivery, improves 
+quality and reliability, enables scalability, and drives continuous improvement.
+By adopting DevOps practices, organizations can achieve greater efficiency, agility, 
+and business success in today's fast-paced and technology-driven world.
