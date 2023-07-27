@@ -1,0 +1,139 @@
+To view what's written in a file.
+
+root@ip-172-31-35-128:~# cat test.txt
+This file regarding the learning Linux
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:01:28 UTC 2023
+root@ip-172-31-35-128:~#
+
+To change the access permissions of files
+
+root@ip-172-31-35-128:~# ls -l test.txt
+-rw-r--r-- 1 root root 39 Jul 27 06:01 test.txt
+root@ip-172-31-35-128:~# chmod 700 test.txt
+-rwx------ 1 root root   39 Jul 27 06:01 test.txt
+
+To check which commands you have run till now
+
+root@ip-172-31-35-128:~# history
+    1  useradd -m dheeraj
+    2  ls -ld /home/dheeraj/
+    3  passwd dheeraj
+    4  cat /etc/ssh/sshd_config | grep i password
+    5  catr /etc/ssh/sshd_config | grep -i password
+    6  cat /etc/ssh/sshd_config | grep -i password
+    7  visudo
+    8  vi /etc/sudoers
+    9  ls -l /etc/sudoers
+   10  chmod 700 /etc/sudoers
+   11  vi /etc/sudoers
+   12  clear
+   13  ls -lrt
+   14  touch test.txt
+   15  cat "This file regarding the learning Linux" > test.txt
+   16  echo "This file regarding the learning Linux" > test.txt
+   17  cat test.txt
+   18  date
+   19  ls -l test.txt
+   20  chmod 700 test.txt
+   21  history
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:08:14 UTC 2023
+root@ip-172-31-35-128:~#
+
+To remove a directory/ Folder
+
+root@ip-172-31-35-128:~# rmdir demofolder  (Remove empty folder)
+root@ip-172-31-35-128:~# rm -rf removefolder (Remove non-empty folder)
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:11:05 UTC 2023
+root@ip-172-31-35-128:~#
+
+
+To create a fruits.txt file and to view the content
+
+root@ip-172-31-35-128:~# echo "This file related to fruits" > fruits.txt
+root@ip-172-31-35-128:~# cat fruits.txt
+This file related to fruits
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:13:12 UTC 2023
+root@ip-172-31-35-128:~#
+
+
+Add content in devops.txt (One in each line) - Apple, Mango, Banana, Cherry, Kiwi, Orange, Guava.
+
+root@ip-172-31-35-128:~# vi devops.txt
+root@ip-172-31-35-128:~# cat devops.txt
+Apple
+Mango
+Banana
+Cherry
+Kiwi
+Orange
+Guava
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:14:48 UTC 2023
+root@ip-172-31-35-128:~#
+
+
+To Show only top three fruits from the file
+
+root@ip-172-31-35-128:~# cat devops.txt | head -3
+Apple
+Mango
+Banana
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:17:00 UTC 2023
+root@ip-172-31-35-128:~#
+
+To Show only bottom three fruits from the file
+
+root@ip-172-31-35-128:~# cat devops.txt | tail -3
+Kiwi
+Orange
+Guava
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:18:32 UTC 2023
+root@ip-172-31-35-128:~#
+
+To create another file Colors.txt and to view the content
+
+root@ip-172-31-35-128:~# touch Colors.txt
+root@ip-172-31-35-128:~# cat Colors.txt
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:19:47 UTC 2023
+root@ip-172-31-35-128:~#
+
+Add content in Colors.txt (One in each line) - Red, Pink, White, Black, Blue, Orange, Purple, Grey.
+
+root@ip-172-31-35-128:~# cat Colors.txt
+Red
+Pink
+White
+Black
+Blue
+Orange
+Purple
+Grey
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:24:44 UTC 2023
+root@ip-172-31-35-128:~#
+
+To find the difference between fruits.txt and Colors.txt file
+
+root@ip-172-31-35-128:~# diff fruits.txt Colors.txt
+1c1,8
+< This file related to fruits
+---
+> Red
+> Pink
+> White
+> Black
+> Blue
+> Orange
+> Purple
+> Grey
+root@ip-172-31-35-128:~# date
+Thu Jul 27 06:26:09 UTC 2023
+root@ip-172-31-35-128:~#
+
