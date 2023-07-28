@@ -1,0 +1,59 @@
+Explain in your own words and examples, what is Shell Scripting for DevOps.
+
+Shell Scripting for devops generally user for automation purpose.Scripting genrally contain set of command with condition/control flow .So if there are some task which needs to be done repetative without human intervention to reduce human effort/error we put those task in the script and then run acoordingly either maunlly or with the help crontab.
+
+What is #!/bin/bash? can we write #!/bin/sh as well?
+
+#!/bin/bash repesent the interpreter it basically which shell is going to run mention command.
+
+#!/bin/sh - yes its also represent shell.
+
+Write a Shell Script which prints I will complete #90DaysOofDevOps challenge
+
+[dheeraj@localhost shell_script]$ ./devops_challenge.sh
+I will complete #90DaysOofDevOps challenge
+[dheeraj@localhost shell_script]$ date
+Fri Jul 28 10:33:47 IST 2023
+[dheeraj@localhost shell_script]$ cat devops_challenge.sh
+#!/bin/bash
+
+echo "I will complete #90DaysOofDevOps challenge"
+[dheeraj@localhost shell_script]$
+
+
+Write a Shell Script to take user input, input from arguments and print the variables
+
+[dheeraj@localhost shell_script]$ ./input_output.sh
+Enter your name : Dheeraj
+Your Name is Dheeraj
+Enter password : your password is 123
+[dheeraj@localhost shell_script]$ cat input_output.sh
+#!/bin/bash
+
+read -p "Enter your name : " Name
+echo "Your Name is $Name"
+
+read -s -p "Enter password : " password
+echo "your password is $password "
+[dheeraj@localhost shell_script]$ date
+Fri Jul 28 10:40:59 IST 2023
+[dheeraj@localhost shell_script]$
+
+
+Write an Example of If else in Shell Scripting by comparing 2 numbers
+
+[dheeraj@localhost shell_script]$ cat comparision.sh
+#!/bin/bash
+
+read -p "Enter the first Number :" x
+read -p "Enter the second Numer :" y
+
+if [ $x -lt $y ]
+then
+   echo "y is grater than x"
+else
+   echo "x is grater than y"
+fi
+[dheeraj@localhost shell_script]$ date
+Fri Jul 28 11:06:02 IST 2023
+[dheeraj@localhost shell_script]$
