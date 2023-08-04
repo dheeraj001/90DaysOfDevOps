@@ -1,0 +1,27 @@
+For the task creating the dir 1 to 10
+
+
+#!/bin/bash
+
+dir=$1
+start=$2
+end=$3
+mkdir $1
+for (( i=$start ; i<=$end ; i++ ));
+do
+    mkdir -p $1/$1$i
+done
+
+===========================================
+
+#!/bin/bash
+
+Backup_directory="/home/dheeraj/script/movie/*"
+Backups="/home/dheeraj/script"
+NOW="$(date +"%m-%d-%Y-%H-%M")"
+
+tar cvfz $Backups/movie-backup.$NOW.tar.gz $Backup_directory
+
+For crontab
+
+* * * * * /usr/bin/bash /home/dheeraj/script/backup-2.sh
